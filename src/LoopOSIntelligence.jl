@@ -4,6 +4,8 @@ module LoopOSIntelligence
 
 export intelligence
 
+using LoopOS: TrackedSymbol, Input, Action, Loop, InputPeripheral, OutputPeripheral
+
 include("Caching.jl")
 include("State.jl")
 include("Human.jl")
