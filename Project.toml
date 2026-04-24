@@ -1,6 +1,6 @@
 name = "LoopOSIntelligence"
 uuid = "3972bd83-d592-43bc-949f-8eff9a87447b"
-version = "4.0.0"
+version = "5.0.0"
 authors = ["1m1 <imi@1m1.io>"]
 
 [deps]
