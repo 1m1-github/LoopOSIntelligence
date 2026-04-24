@@ -10,6 +10,7 @@ include("Human.jl")
 include("Local.jl")
 include("XAI.jl")
 include("Anthropic.jl")
+include("Utils.jl")
 include("Intelligence.jl")
 
 end
