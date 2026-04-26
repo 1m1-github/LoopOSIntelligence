@@ -1,7 +1,7 @@
 # todo add methods to functions based on execution to avoid typing in code
 
 function os_time(timestamp)
-    ΔT = timestamp - LOOP.boot_time
+    ΔT = timestamp - LOOP.boottime
     isinf(ΔT) && return "[∞s]"
     "[$(round(Int, ΔT))s]"
 end

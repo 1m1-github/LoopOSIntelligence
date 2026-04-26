@@ -2,8 +2,9 @@ module XAI
 
 using HTTP, JSON3, UUIDs
 
-const URL = "https://api.anthropic.com/v1/messages"
+const URL = "https://api.x.ai/v1"
 const CID = string(uuid4())
+const MAX_USD_IN_TICKS = 25 * 10^10
 
 function intelligence(
     model,
@@ -34,7 +35,7 @@ function intelligence(
     result["choices"][1]["message"]["content"], ΔEnery(result, model)
 end
 
-const MAX_USD_IN_TICKS = 25 * 10^10
+
 ΔEnery(result, model) = result["usage"]["cost_in_usd_ticks"] / MAX_USD_IN_TICKS
 
 end
